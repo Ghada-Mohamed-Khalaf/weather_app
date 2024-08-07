@@ -6,9 +6,11 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Weather App"),
+      appBar: AppBar(title: const Text("Weather App"),centerTitle: true,
+        backgroundColor: Colors.blue,
         actions: [
-          Icon(Icons.search),
+          IconButton(onPressed: () {},icon: const Icon(Icons.search),)
+
         ],
 
       ),
