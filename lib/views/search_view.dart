@@ -10,7 +10,9 @@ class SearchView extends StatelessWidget {
         title: const Text("Search City"),
 
       ),
-      body: const TextField(),
+      body: const TextField(decoration: InputDecoration(
+        border: OutlineInputBorder()
+      ),),
     );
   }
 }
