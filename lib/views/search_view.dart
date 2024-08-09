@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchView extends StatelessWidget {
@@ -10,10 +11,24 @@ class SearchView extends StatelessWidget {
         title: const Text("Search City"),
 
       ),
-      body: Center(
-        child: const TextField(decoration: InputDecoration(
-          border: OutlineInputBorder()
-        ),),
+      body:  Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
+        child: Center(
+          child: TextField(decoration: InputDecoration(
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide(color: Colors.orange,
+              ),
+
+
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.green),
+            )
+
+          ),),
+
+        ),
       ),
     );
   }
