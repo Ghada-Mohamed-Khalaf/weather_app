@@ -17,7 +17,7 @@ class WeatherModel {
       required this.weatherCondition});
 
   factory WeatherModel.fromJson(json){
-    return  WeatherModel(cityName: cityName, date: date, image: image, maxTemp: maxTemp, minTemp: minTemp, temp: temp, weatherCondition: weatherCondition) 
+    return  WeatherModel(cityName:json["location"]['name'], date:json["current"]['last_updated'] , image: json['forecast']['forecastday'][0]['day']['condition'][ "icon"], maxTemp: json['forecast']['forecastday'][0]['day']['maxtemp_c'] , minTemp: json['forecast']['forecastday'][0]['day']['mintemp_c'], temp: json['forecast']['forecastday'][0]["avgtemp_c"], weatherCondition: json['forecast']['forecastday'][0]['day']['condition']['text'],);
   }
 
 }
