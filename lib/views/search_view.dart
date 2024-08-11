@@ -19,7 +19,7 @@ class SearchView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Center(
           child: TextField(
-            onChanged: (value){
+            onSubmitted:(value)  {
               log(value);
 
             },
