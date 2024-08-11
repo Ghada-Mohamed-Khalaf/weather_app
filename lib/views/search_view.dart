@@ -15,19 +15,19 @@ class SearchView extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Center(
           child: TextField(decoration: InputDecoration(
-            hintText:"enter city name" ,
+            hintText:"enter city name" ,hintStyle:const TextStyle(color: Colors.red) ,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: Colors.orange,
+              borderSide: const BorderSide(color: Colors.orange,
               ),
 
 
             ),
-            enabledBorder: OutlineInputBorder(
+            enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.green),
 
             ),
-            focusedBorder: OutlineInputBorder()
+            focusedBorder: const OutlineInputBorder()
 
           ),),
 
