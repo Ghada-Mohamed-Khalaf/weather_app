@@ -53,3 +53,4 @@ class SearchView extends StatelessWidget {
     );
   }
 }
+WeatherModel? weatherModel;
