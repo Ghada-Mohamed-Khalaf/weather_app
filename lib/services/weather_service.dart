@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
@@ -23,6 +24,10 @@ class WeatherServices {
 
     final String errorMessage = e.response?.data['error']['message'] ?? 'oops there was an error,try again';
    throw Exception(errorMessage);
+  }
+  catch (e){
+      log(e.toString());
+     throw Exception( 'oops there was an error,try again');
   }
 }
       }
