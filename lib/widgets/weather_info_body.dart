@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class WeatherInfoBudy extends StatelessWidget {
-  const WeatherInfoBudy({super.key});
+class WeatherInfoBody extends StatelessWidget {
+  const WeatherInfoBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(children: [Text("vgdjdmdcndj")
 
     ],
 
