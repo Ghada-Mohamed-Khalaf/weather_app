@@ -30,7 +30,7 @@ class _HomeViewState extends State<HomeView> {
       body:weatherModel==null?
           NoWeatherBody():
 
-      WeatherInfoBudy(),
+      WeatherInfoBudy( ),
     );
   }
 }
