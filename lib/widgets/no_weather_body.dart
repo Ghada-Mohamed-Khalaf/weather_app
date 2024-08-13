@@ -5,6 +5,16 @@ class NoWeatherBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Padding(padding: EdgeInsets.symmetric(horizontal: 16,),
+      child :Center(
+      child: Column(
+        children: [
+          Text("there is no weather 😔 start",style: TextStyle(fontSize: 25),),
+          Text("search now 🔍",style: TextStyle(fontSize: 25),),
+        ],
+
+      ),
+    ),
+    );
   }
 }
