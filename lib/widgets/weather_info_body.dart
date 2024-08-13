@@ -5,12 +5,11 @@ class WeatherInfoBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [Text("vgdjdmdcndj")
-
-    ],
-
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: const Column(
+        children: [Text("vgdjdmdcndj")],
+      ),
     );
-
-
   }
 }
