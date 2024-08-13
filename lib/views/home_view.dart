@@ -27,10 +27,10 @@ class _HomeViewState extends State<HomeView> {
         ],
 
       ),
-      body:weatherModel==null?
-          NoWeatherBody():
+      body:
+          NoWeatherBody(),
 
-      WeatherInfoBudy( ),
+
     );
   }
 }
