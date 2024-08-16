@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/cubits/get_weather_cubit/get_weather_cubit.dart';
+import 'package:weather_app/cubits/get_weather_cubit/get_weather_states.dart';
 import 'package:weather_app/models/weather_model.dart';
 import 'package:weather_app/views/search_view.dart';
 import 'package:weather_app/widgets/no_weather_body.dart';
@@ -27,8 +30,13 @@ class _HomeViewState extends State<HomeView> {
         ],
 
       ),
-      body:
-          NoWeatherBody(),
+      body:BlocBuilder<GetWeatherCubit,WeatherState>(
+        builder: (context,state)
+        {
+        return  NoWeatherBody();
+        },
+      )
+
 
 
     );
