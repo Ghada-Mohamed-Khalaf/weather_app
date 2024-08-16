@@ -15,12 +15,37 @@ class WeatherInfoBody extends StatelessWidget {
           Text(weatherModel.cityName,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
           Text("update at ${weatherModel.date}:${weatherModel.date}",style: TextStyle(fontSize: 24),),SizedBox(height: 32,),
           Row(
-            children: [Image.network("https:${weatherModel.image}",height: 90,width: 90,),],
+            children: [Image.network("https:${weatherModel.image}",height: 90,width: 90,),
+            Text(
+              "${weatherModel.temp.round()}",
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 32,
+              ),
+            ),
+      ],
           ),
+      Column(
+          children: [
+      Text(
+      'Max Temp: ${weatherModel.maxTemp.round()}',
+      style: const TextStyle(
+        fontSize: 16,
+      ),
+    ),
+    Text(
+    'Min Temp: ${weatherModel.minTemp.round()}',
+    style: const TextStyle(
+    fontSize: 16,
+    ),
 
-          
+
+    ),
 
        ],
+
+    ),
+      ],
       ),
     );
   }
