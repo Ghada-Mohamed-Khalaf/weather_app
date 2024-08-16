@@ -33,9 +33,19 @@ class _HomeViewState extends State<HomeView> {
       body:BlocBuilder<GetWeatherCubit,WeatherState>(
         builder: (context,state)
         {
-        return  NoWeatherBody();
+        if( state is NoWeatherState){
+          return NoWeatherBody();
+        }
+        else if(state is WeatherLoadedState)
+        {
+       return WeatherInfoBody();
+        }
+        else{
+          return Text("opps there was  an error");
+        }
         },
-      )
+
+      ),
 
 
 
