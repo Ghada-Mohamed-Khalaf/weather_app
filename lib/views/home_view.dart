@@ -41,7 +41,7 @@ class _HomeViewState extends State<HomeView> {
        return WeatherInfoBody();
         }
         else{
-          return Text("opps there was  an error");
+          return Text("opps there was  an error ");
         }
         },
 
